@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    background-color: var(--OffBlack);
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1{
+    font-weight: 700;
+    margin-top: 25px;
+    font-size: 24px;
+}
+
+h2{
+    font-weight: 700;
+    color: var(--Green);
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+a{
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--White);
+    transition: .4s;
+}
+
+button{
+    border: none;
+    background-color: var(--Grey);
+    margin-top: 15px;
+    width: 275px;
+    padding: 15px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+button:hover{
+    background-color: var(--Green);
+}
+
+button:hover a{
+    color: var(--OffBlack);
+}
+
+img{
+    width: 80px;
+    border-radius: 100%;
+}
+
+section{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--DarkGrey);
+    border-radius: 8px;
+    padding: 25px 10px;
+}
+
+div#buttons{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1024px){
+    section{
+        width: 350px;
+    }
+
+    button{
+        width: 300px;
+    }
+}
